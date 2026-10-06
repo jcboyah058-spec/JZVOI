@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM Interaction Activity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="card">
+    <h1 id="mainHeading">MAAYONG BUNTAG SA INYONG TANAN!</h1>
+
+    <p id="message" class="message">
+      Click mo nga lahat ng Button pre, tamo Magic!
+    </p>
+
+    <section class="controls">
+      <button id="changeMessageBtn">Change Message</button>
+      <button id="toggleColorBtn">Toggle Background Color</button>
+      <button id="toggleVisibilityBtn">Show/Hide This Box</button>
+      <div id="hiddenBox" class="hidden-box">
+        🎉 BULAGA! gulat ka no?hihi.
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="form-section">
+      <h2>Sign Up Form</h2>
+      <form id="signupForm" novalidate>
+        <div class="form-group">
+          <label for="nameInput">Name:</label>
+          <input type="text" id="nameInput" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-group">
+          <label for="emailInput">Email:</label>
+          <input type="email" id="emailInput" placeholder="Enter your email" />
+        </div>
+
+        <button type="submit" id="submitBtn">Submit</button>
+      </form>
+
+      <p id="formFeedback" class="form-feedback"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
